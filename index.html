@@ -4,8 +4,8 @@
     <head>
         <title>jQuery To Do List</title>
         
-        <link href="normalize.css" rel="stylesheet">
-        <link href="styles.css" rel="stylesheet">
+        <link href="css/normalize.css" rel="stylesheet">
+        <link href="css/styles.css" rel="stylesheet">
         
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,16 +13,17 @@
 
         
         <!-- jQuery UI CSS -->
-        <link href="jquery-ui.min.css" rel="stylesheet">
+        <link href="js/jquery-ui-1.11.4/jquery-ui.min.css" rel="stylesheet">
     </head>
     
     <body>
-        <div class="container">
+        <div class="container-fluid">
         <div class="container" id="todoListWrapper">
-            <h1>The jQuery To Do List</h1>
+            <div class="cover">
+            <h1 class="text-center">The jQuery To Do List</h1>
             </div>
-            <div class="container">
-            <div id="todoList">
+            
+            <div class="container-fluid" id="todoList">
                 <ul>
                     <li class="listTitle">Monday</li>
                     <li class="addItem"><input type="text" placeholder="add new item..."></li>
@@ -56,18 +57,19 @@
         </div><!-- .container -->
         
         <div id="trash">drop here to delete an item</div>
-            </div>
+            
         
         <!-- Load the CDN first -->
         <script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
         
         <!-- If CDN fails to load, serve up the local version -->
-        <script>window.jQuery || document.write('<script src="jquery-2.1.4.js"><\/script>');</script>
+        <script>window.jQuery || document.write('<script src="js/jquery-2.1.4.js"><\/script>');</script>
         
         <!-- jQuery UI -->
-        <script src="jquery-ui.min.js"></script>
+        <script src="js/jquery-ui-1.11.4/jquery-ui.min.js"></script>
         
-        <script src="script.js"></script>
+            <script src="js/script.js"></script>
+            </div>
     </body>
     
 </html>
