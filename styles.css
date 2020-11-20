@@ -177,7 +177,7 @@ ul li:active {
 
 @media (max-width: 500px){
     .container{
-        width: 80%;
+        width: 100%;
         height: auto;
     }
 }
@@ -188,4 +188,23 @@ ul li:active {
     }
 }
 
+@media (max-width: 500px){
+    #todoListWrapper{
+        width: 80%;
+        height: auto;
+    }
+}
+@media (max-width: 500px){
+    .container1{
+        width: 80%;
+        height: auto;
+    }
+}
 
+@media only screen and ( max-width : 568px ) {
+    .cover h1 {
+        font-size: 40px;
+    }
+    
+    
+}
