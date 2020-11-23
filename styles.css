@@ -1,7 +1,12 @@
 /* styles.css */
 
 body {
-    background: #eee;
+    background:url("https://images.unsplash.com/photo-1523634921619-37ce98c1877f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=752&q=80");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    
+    
 }
 
 .container {
@@ -92,9 +97,17 @@ ul li:active {
    TODO LIST
    --------- */
 
+.cover{
+    background-image: url("https://images.unsplash.com/photo-1504520684879-d6f9d8c45e0c?ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80");
+    color: aliceblue;
+}
 #todoListWrapper {
     width: 960px;
     text-align: center;
+    background-image: url("https://images.unsplash.com/photo-1504520684879-d6f9d8c45e0c?ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80");
+    color: aliceblue;
+    background-position: top;
+    background-repeat: repeat-x;
 }
 
 #todoList:after {
@@ -124,12 +137,13 @@ ul li:active {
 }
 
 #todoList li.listTitle {
-    background: #444;
+     background:grey;
     color: white;
     padding: 10px;
     text-align: center;
     border-right: solid 1px white;
     font-size: 14px;
+    box-sizing: border-box;
 }
 
 #todoList li.listTitle:hover,
@@ -165,7 +179,7 @@ ul li:active {
 }
 
 #trash {
-    background: rgba(178, 73, 38, 0.7);
+    background: linear-gradient(to top,grey,black,grey);
     color: white;
     height: 200px;
     width: 400px;
